@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+.title{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #0000001C;
+    transition: .3s ease box-shadow;
+}
+
+.title:hover{
+    box-shadow: 0px 0px 100px 0px red;
+    animation: breathing 3s ease-out infinite normal;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(39, 34, 34);
+}
+
+section{
+    min-height: 40vh;
+    width: 100%;
+    padding: 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #0000001C;
+    transition: .3s ease box-shadow;
+}
+
+
+.container div:hover{
+    box-shadow: 0px 0px 30px 0px red;
+}
+
+
+
+.container h2{
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+.arrow{
+    background-color: transparent!important;
+    padding: 0 100px!important;
+    box-shadow: none!important;
+    cursor: default!important;
+}
+
+.arrow img{
+    width: 80px;
+}
+
+/*BREATHING ANIMATION*/
+
+@-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
